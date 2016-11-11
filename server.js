@@ -47,11 +47,12 @@ function createTemplate (data) {
     </div>
     <div id="content">
         ${content}
-    </div>
-    <div id="comment_form">
+        <div id="comment_form">
     </div>
     <div id="comments">
     </div>
+    </div>
+    
 
 <script type="text/javascript" src="/ui/article.js"></script>
 </body>
