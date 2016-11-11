@@ -1,0 +1,57 @@
+body {
+    background-image: url(blogback.jpg);
+    margin-left: -7px;
+    margin-top: -5px;
+    margin-right: -4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+#header {
+    background-color: lightyellow;
+    height: 15%;
+    width: 100%;
+    opacity: 0.65;
+    padding-top: 20px;
+}
+
+#home {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkslategrey;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 22;
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+
+#myblog {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 38;
+    margin-left: 30px;
+}
+
+#articlelist {
+    float: left;
+    position: absolute;
+    width: 25.2%;
+    background-color: lightblue;
+    height: 85%;
+    opacity: 0.5;
+}
+
+#content {
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-right: 25px;
+    position: absolute;
+    background-color: azure;
+    margin-left: 340px;
+    width: 75%;
+    height: 85%;
+    opacity: 0.38;
+}
