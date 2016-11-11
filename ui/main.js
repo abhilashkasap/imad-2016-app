@@ -90,6 +90,6 @@ function loadLoginForm () {
     };
 }
 
-hello();
+
 loadLoginForm();
 loadLogin();
