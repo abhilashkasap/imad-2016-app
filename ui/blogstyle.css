@@ -38,7 +38,7 @@ body {
 #articlelist {
     float: left;
     position: absolute;
-    width: 25.2%;
+    width: 25%;
     background-color: lightblue;
     height: 85%;
     opacity: 0.5;
