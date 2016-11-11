@@ -9,13 +9,13 @@ function loadArticles () {
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
-                    <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
+                    <a onclick="loadArticlescontent();" href="#">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
-                content += "</ul>"
+                content += "</ul>";
                 articles.innerHTML = content;
             } else {
-                articles.innerHTML('Oops! Could not load all articles!')
+                articles.innerHTML('Oops! Could not load all articles!');
             }
         }
     };
@@ -24,28 +24,28 @@ function loadArticles () {
     request.send(null);
 }
 loadArticles();
-function loadArticles () {
+function loadArticlescontent () {
+    var articles = document.getElementById('content');
         // Check if the user is already logged in
+       /* var articles = document.getElementById('content');
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
-            var articles = document.getElementById('articles');
+            var content = '<p>';
             if (request.status === 200) {
-                var content = '<ul>';
+                
                 var articleData = JSON.parse(this.responseText);
-                for (var i=0; i< articleData.length; i++) {
-                    content += `<li>
-                    <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
-                    (${articleData[i].date.split('T')[0]})</li>`;
+                
+                    content += articleData.content;
+        
                 }
-                content += "</ul>"
+                content += "</p>";
                 articles.innerHTML = content;
             } else {
-                articles.innerHTML('Oops! Could not load all articles!')
+                articles.innerHTML('Oops! Could not load all articles!');
             }
-        }
-    };
+        }*/
+        articles.innerHTML=`hello`;
+    }
     
-    request.open('GET', '/get-articles', true);
-    request.send(null);
-}
+   
