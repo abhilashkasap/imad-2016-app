@@ -70,19 +70,7 @@ function createTemplate (data) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/ui/log.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'log.jpg'));
-});
-app.get('/ui/bc.jpeg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bc.jpeg'));
-});
-app.get('/ui/alone.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'alone.jpg'));
-  
-});
-app.get('/ui/new.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'new.jpg'));
-});
+
 function hash (input, salt) {
     // How do we create a hash?
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
