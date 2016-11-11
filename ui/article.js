@@ -45,8 +45,8 @@ function loadArticlescontent (title) {
                 articles.innerHTML('Oops! Could not load all articles!');
             }
         }*/
-        var name=title;
-        articles.innerHTML=name;
+        var name="<p>"+title+"</p>";
+        articles.innerHTML= name;
     }
     
    
