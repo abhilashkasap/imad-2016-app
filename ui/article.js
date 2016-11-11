@@ -9,7 +9,7 @@ function loadArticles () {
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
-                    <a onclick="loadArticlescontent();" href="#">${articleData[i].heading}</a>
+                    <a onclick="loadArticlescontent("+${articleData[i].title}+");" href="#">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
                 content += "</ul>";
@@ -24,7 +24,7 @@ function loadArticles () {
     request.send(null);
 }
 loadArticles();
-function loadArticlescontent () {
+function loadArticlescontent (title) {
     var articles = document.getElementById('content');
         // Check if the user is already logged in
        /* var articles = document.getElementById('content');
@@ -45,7 +45,7 @@ function loadArticlescontent () {
                 articles.innerHTML('Oops! Could not load all articles!');
             }
         }*/
-        articles.innerHTML=`hello`;
+        articles.innerHTML=title;
     }
     
    
