@@ -1,3 +1,9 @@
+function changediv()
+{
+    var changedivtemp=`<h1> <a href="/logout"> Logout</a></h1>`;
+    document.getElementById('loginwindow').innerHTML=changedivtemp;
+    
+}
 function loadLogin () {
     // Check if the user is already logged in
     var request = new XMLHttpRequest();
@@ -5,6 +11,7 @@ function loadLogin () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
                 loadLoggedInUser(this.responseText);
+                changediv();
             } else {
                 alert("User is not Logged in");
             }
