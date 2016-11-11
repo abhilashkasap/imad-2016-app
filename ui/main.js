@@ -17,7 +17,7 @@ function loadLogin () {
 function loadLoggedInUser (username) {
     var user_name=username;
     
-    alert(`Welcome ! User logged`+user_name+` in Succesfully`);
+    alert(`Welcome ! User `+user_name+` logged in Succesfully`);
 }
 function loadLoginForm () {
    
