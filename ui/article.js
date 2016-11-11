@@ -9,7 +9,7 @@ function loadArticles () {
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
-                    <a onclick="loadArticlescontent("+${articleData[i].title}+");" href="#">${articleData[i].heading}</a>
+                    <a onclick="loadArticlescontent();" href="#">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
                 content += "</ul>";
