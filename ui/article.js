@@ -24,7 +24,7 @@ function loadArticles () {
     request.send(null);
 }
 loadArticles();
-function loadArticlescontent (title) {
+function loadArticlescontent () {
     var articles = document.getElementById('content');
         // Check if the user is already logged in
        /* var articles = document.getElementById('content');
