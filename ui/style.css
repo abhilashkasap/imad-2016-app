@@ -29,7 +29,7 @@ body {
 
 .container {
     background-color: darkgray;
-    background-image: url(alone.jpg);
+    background-image: url(/ui/alone.jpg);
     background-size: cover;
     height: 700px;
     width: 100%;
@@ -67,7 +67,7 @@ body {
 }
 
 #loginpage {
-    background-image: url(bc.jpeg);
+    background-image: url(/ui/bc.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -138,7 +138,7 @@ body {
 }
 
 #contactme {
-    background-image: url(new.jpg);
+    background-image: url(/ui/new.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
