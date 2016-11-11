@@ -1,11 +1,9 @@
 body {
     background-image: url(blogback.jpg);
-    margin-left: -7px;
-    margin-top: -5px;
-    margin-right: -4px;
+    margin:0;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 0;
+    
 }
 
 #header {
