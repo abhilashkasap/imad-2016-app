@@ -50,7 +50,8 @@ function createTemplate (data) {
     </div>
     <div id="comment_form">
     </div>
-    <div id="co
+    <div id="comments">
+    </div>
 
 <script type="text/javascript" src="/ui/article.js"></script>
 </body>
