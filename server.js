@@ -28,12 +28,10 @@ function createTemplate (data) {
     var heading = data.heading;
     var content = data.content;
     
-    var htmlTemplate = `
- <!DOCTYPE html>
-<head>
-    <title>
-        ${title}
-    </title>
+    var htmlTemplate = `<!DOCTYPE html>
+                         <head>
+          <title>
+        ${title} </title>
     <link rel="stylesheet" type="text/css" href="/ui/blogstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 </head>
@@ -50,12 +48,14 @@ function createTemplate (data) {
     <div id="content">
         ${content}
     </div>
+    <div id="comment_form">
+    </div>
+    <div id="co
 
 <script type="text/javascript" src="/ui/article.js"></script>
 </body>
 
-</html>
-    `;
+</html> `;
     return htmlTemplate;
 }
 
