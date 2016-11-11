@@ -89,5 +89,10 @@ function loadLoginForm () {
     
     };
 }
+function hello()
+{
+    alert("hello world");
+}
+hello();
 loadLoginForm();
 loadLogin();
