@@ -30,39 +30,32 @@ function createTemplate (data) {
     
     var htmlTemplate = `
     <html>
-      <head>
-          <title>
-              ${title}
-          </title>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="/ui/style.css" rel="stylesheet" />
-      </head> 
-      <body>
-          <div class="container">
-              <div>
-                  <a href="/">Home</a>
-              </div>
-              <hr/>
-              <h3>
-                  ${heading}
-              </h3>
-              <div>
-                  ${date.toDateString()}
-              </div>
-              <div>
-                ${content}
-              </div>
-              <hr/>
-              <h4>Comments</h4>
-              <div id="comment_form">
-              </div>
-              <div id="comments">
-                <center>Loading comments...</center>
-              </div>
-          </div>
-          <script type="text/javascript" src="/ui/article.js"></script>
-      </body>
-    </html>
+
+<head>
+    <title>
+        ${title}
+    </title>
+    <link rel="stylesheet" type="text/css" href="/ui/blogstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <span id="home"><a class="anchor" href="/">Home</a></span>
+        <span id="myblog">Vikshipt's Blog</span>
+        <div id="userinfo">
+        </div>
+    </div>
+    <div id="articlelist">
+    </div>
+    <div id="content">
+        ${content}
+    </div>
+
+<script type="text/javascript" src="/ui/article.js"></script>
+</body>
+
+</html>
     `;
     return htmlTemplate;
 }
