@@ -46,7 +46,7 @@ function loadArticlescontent (title) {
             }
         }*/
         var name="<p>"+title+"</p>";
-        articles.innerHTML= 'title';
+        articles.innerHTML= "hello";
     }
     
    
