@@ -6,7 +6,7 @@ function loadLogin () {
             if (request.status === 200) {
                 loadLoggedInUser(this.responseText);
             } else {
-                
+                alert("User is not Logged in");
             }
         }
     };
