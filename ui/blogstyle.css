@@ -82,3 +82,7 @@ body {
 .list:hover{
     background-color:black;
 }
+#body
+{
+    height:100%;
+}
