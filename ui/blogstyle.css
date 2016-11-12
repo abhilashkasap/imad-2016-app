@@ -115,3 +115,13 @@ body {
         margin-left: 50px;
     margin-top: 30px;
 }
+.comment
+{
+    font-size: 20px;
+    font-family: cursive;
+    background-color: azure;
+}
+.commenter
+{
+    font-family: monospace;
+}
