@@ -43,7 +43,7 @@ function createTemplate (data) {
         <span id="home"><a class="anchor" href="/">Home</a></span>
         <span id="myblog">Vikshipt's Blog</span>
         <div id="userinfo">
-        <p>hello</p>
+        
         </div>
     </div>
     <div id="articlelist">
