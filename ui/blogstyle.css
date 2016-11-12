@@ -8,10 +8,11 @@ body {
 
 #header {
     background-color: lightyellow;
-    height: 30%;
+    height: 15%;
     width: 100%;
     opacity: 0.65;
     margin:0;
+    position:absolute;
 }
 
 #home {
@@ -39,7 +40,7 @@ body {
     position: absolute;
     width: 25%;
     background-color: lightblue;
-    height: 70%;
+    height: 85%;
     opacity: 0.5;
 }
 
@@ -51,6 +52,6 @@ body {
     background-color: azure;
     margin-left: 25%;
     width: 75%;
-    height: 70%;
+    height: 85%;
     opacity: 0.38;
 }
