@@ -42,11 +42,12 @@ body {
     background-color: lightblue;
     height:100%;
     opacity: 0.5;
+    position:absolute;
 }
 
 #content {
 
-
+   position:absolute;
     
     margin-top:115px;
     background-color: azure;
