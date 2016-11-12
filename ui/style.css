@@ -29,11 +29,12 @@ body {
 
 .container {
     background-color: darkgray;
-    background-image: url(/ui/alone.jpg);
+    background-image: url(/ui/myimg.jpg);
     background-size: cover;
-    height: 700px;
+    height: 850px;
     width: 100%;
 }
+
 
 #navbar {
     margin-top: -8px;
