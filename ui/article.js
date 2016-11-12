@@ -5,7 +5,7 @@ function loadArticles () {
         if (request.readyState === XMLHttpRequest.DONE) {
             var articles = document.getElementById('articlelist');
             if (request.status === 200) {
-                var content = '<ul>';
+                var content = '<ul class="list">';
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
