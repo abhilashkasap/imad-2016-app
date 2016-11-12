@@ -69,3 +69,8 @@ body {
     background-color:red;
     color:darkslategrey;
 }
+.listanchor
+{
+     text-decoration: none;
+    color: white;
+}
