@@ -21,6 +21,7 @@ app.use(session({
     secret: 'someRandomSecretValue',
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
+var pool = new Pool(config);
 
 function createTemplate (data) {
     var title = data.title;
@@ -156,7 +157,7 @@ app.get('/logout', function (req, res) {
    res.send('<http><head><meta http-equiv="Refresh" content="1; /"></head>');
 });
 
-var pool = new Pool(config);
+
 
 app.get('/get-articles', function (req, res) {
    // make a select request
