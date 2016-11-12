@@ -156,3 +156,15 @@ body {
     margin-top: 200px;
     font-size: 30px;
 }
+#authorinfo {
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+    margin-top: 80px;
+    background-color: gray;
+    border-radius: 10%;
+    margin-left: 15px;
+    background-color: gray;
+    border-radius: 0.5;
+    opacity: 0.65;
+}
