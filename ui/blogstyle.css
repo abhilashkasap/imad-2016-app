@@ -48,7 +48,7 @@ body {
 #content {
 
    position:absolute;
-    
+    background-image:url(ui/holi.jpg);
     margin-top:115px;
     background-color: azure;
     margin-left: 25%;
