@@ -56,8 +56,11 @@ body {
     height:100%;
     opacity: 0.38;
 }
-.list
+.ulist
 {
     list-style-type:none;
+    padding:0;
+    margin:0;
+    text-align:center;
     
 }
