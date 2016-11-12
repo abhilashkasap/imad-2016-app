@@ -46,7 +46,7 @@ function createTemplate (data) {
     </div>
     <div id="articlelist">
     </div>
-    <div id="content">
+    <div id="dcontent">
         ${content}
         <div id="comment_form">
     </div>
