@@ -35,6 +35,7 @@ function createTemplate (data) {
     <link rel="stylesheet" type="text/css" href="/ui/blogstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 </head>
 
 <body>
