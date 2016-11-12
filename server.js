@@ -51,12 +51,13 @@ function createTemplate (data) {
     <div id="dycontent">
     <div id="maintext">
         ${content}
-    <span style="font-size:22px"><strong>Comments</strong></span>
+   
         </div>
         <div id="comment_form">
           Loading Comment Form........
     </div>
     <div id="comments">
+    <br> <span style="font-size:26px"><strong>Comments</strong></span><br>
      Loading Comments....
     </div>
     </div>
