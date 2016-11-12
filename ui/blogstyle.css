@@ -66,11 +66,17 @@ body {
 }
 .list
 {
-    background-color:red;
-    color:darkslategrey;
+   background-color: darkred;
+    color: darkslategrey;
+    border-bottom: thin solid beige;
+    font-size: 18px;
+    height: 50px;
 }
 .listanchor
 {
      text-decoration: none;
     color: white;
+}
+.listanchor:hover{
+    background-color:black;
 }
