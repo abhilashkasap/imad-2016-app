@@ -56,3 +56,8 @@ body {
     height:100%;
     opacity: 0.38;
 }
+.list
+{
+    list-style-type:none;
+    
+}
