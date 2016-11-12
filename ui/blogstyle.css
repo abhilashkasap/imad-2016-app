@@ -104,3 +104,9 @@ body {
     color: black;
     font-family:'Josefin Slab', serif;;
 }
+#comment_form
+{
+    margin-left: 50px;
+    font-size: 24px;
+    font-family: sans-serif;
+}
