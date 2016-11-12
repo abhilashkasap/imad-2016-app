@@ -5,10 +5,10 @@ function loadArticles () {
         if (request.readyState === XMLHttpRequest.DONE) {
             var articles = document.getElementById('articlelist');
             if (request.status === 200) {
-                var content = '<ul class="list">';
+                var content = '<ul class="ulist">';
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
-                    content += `<li>
+                    content += `<li class="list">
                     <a class="listanchor" href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
