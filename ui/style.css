@@ -60,11 +60,7 @@ body {
     margin-left: 30px;
 }
 
-.nav:hover {
-    color: deepskyblue;
-    text-decoration: underline;
-    background-color: whitesmoke;
-}
+
 
 #loginpage {
     background-image: url("/ui/bc.jpeg");
@@ -75,8 +71,15 @@ body {
 }
 
 .anchor {
-    color: black;
+    color: white;
     text-decoration: none;
+    
+    
+}
+.anchor:hover:
+{
+    color:blue;
+    text-decoration:overline;
 }
 
 #loginwindow {
@@ -103,7 +106,7 @@ body {
     background-color: darkslategray;
     font-size: 15;
     height: 35px;
-    width: 50px;
+    width: 70px;
     border-radius: 8px;
 }
 
@@ -111,7 +114,7 @@ body {
     background-color: indianred;
     font-size: 15;
     height: 35px;
-    width: 100px;
+    width: 125px;
     border-radius: 8px;
 }
 
