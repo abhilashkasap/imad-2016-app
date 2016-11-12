@@ -40,7 +40,7 @@ body {
     margin-top:115px;
     width: 25%;
     background-color: lightblue;
-    
+    height:100%;
     opacity: 0.5;
 }
 
@@ -52,6 +52,6 @@ body {
     background-color: azure;
     margin-left: 25%;
     width: 75%;
-    
+    height:100%;
     opacity: 0.38;
 }
