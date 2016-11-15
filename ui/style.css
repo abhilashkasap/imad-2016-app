@@ -142,7 +142,7 @@ body {
 }
 
 #contactme {
-    background-image: url("/ui/new.jpg");
+    background-color:bisque;
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;

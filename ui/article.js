@@ -1,3 +1,13 @@
+
+function changediv(user_name)
+{
+    var changedivtemp='<strong>Hi '+user_name+' !</strong>';
+    document.getElementById('userinfo').innerHTML=changedivtemp;
+    
+}
+
+
+
 function loadArticles () {
         // Check if the user is already logged in
     var request = new XMLHttpRequest();
@@ -28,7 +38,7 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
-        <h5>Submit a comment</h5>
+        <h5>Submit a comment (You have to login before submitting a comment)</h5>
         <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         <br/>
         <input type="submit" id="submit" value="Submit" />
@@ -73,7 +83,8 @@ function loadLogin () {
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
-                loadCommentForm(this.responseText);
+                
+                changediv(this.responseText);
             }
         }
     };

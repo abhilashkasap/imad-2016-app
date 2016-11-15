@@ -7,11 +7,11 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user: 'abhilashkasap',
-    database: 'abhilashkasap',
-    host: 'db.imad.hasura-app.io',
+    user: 'postgres',
+    database: 'postgres',
+    host: 'localhost',
     port: '5432',
-    password: process.env.DB_PASSWORD
+    password: 'jamaitha'
 };
 
 var app = express();
@@ -43,9 +43,9 @@ function createTemplate (data) {
     <div id="header">
         <span id="home"><a class="anchor" href="/">Home</a></span>
         <span id="myblog">Vikshipt's Blog</span>
-        <div id="userinfo">
-        
-        </div>
+       <span  style="margin-left:45%; font-size:20px; font-family: 'Architects Daughter', cursive;" id="userinfo">
+            <strong> Hi Guest !</strong>
+        </span>
     </div>
     <div id="articlelist">
     </div>
@@ -55,11 +55,11 @@ function createTemplate (data) {
    
         </div>
         <div id="comment_form">
-          Loading Comment Form........
+          
     </div>
     <div id="comments">
     <br> <span style="font-size:26px"><strong>Comments</strong></span><br>
-     Loading Comments....
+      Loading Comments....
     </div>
     </div>
     

@@ -102,13 +102,17 @@ body {
     margin-top: 65px;
     font-size: 24px;
     color: black;
-    font-family:'Josefin Slab', serif;;
+    font-family:'Josefin Slab', serif;
+    margin-right:30px;
+    text-align: justify;
 }
 #comment_form
 {
     margin-left: 50px;
     font-size: 24px;
     font-family: sans-serif;
+    position: relative;
+    display: table-footer-group;
 }
 #comments
 {
