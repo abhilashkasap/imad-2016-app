@@ -1,8 +1,8 @@
 body {
     background-image: url(blogback.jpg);
     margin:0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    -webkit-background-size: cover;
+    
     
 }
 
@@ -108,7 +108,7 @@ body {
 }
 #comment_form
 {
-    margin-left: 50px;
+    
     font-size: 24px;
     font-family: sans-serif;
     position: relative;
