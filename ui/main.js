@@ -71,7 +71,7 @@ function loadLoginForm () {
        //check for minimum requirement
         for( i=0; i<username.length; i++ )
         {   flag =0;
-            if (username[i]==" ")
+            if (username[i]==' ')
             {  flag=1; break; }
         }
         if(flag===1)
@@ -82,9 +82,15 @@ function loadLoginForm () {
         else
         if(password.length<=5)
         alert("Password must be minimum 5 characters");
+    
             else 
                 {
-                    
+                    for(var j=0;j<password.length;j++)
+                      if(password[j]==' ')
+                      {
+                          alert("Password is containing Spaces !!");
+                          break;
+                      }
                     request.open('POST', '/create-user', true);
                     request.setRequestHeader('Content-Type', 'application/json');
                     request.send(JSON.stringify({ username: username, password: password }));
