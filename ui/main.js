@@ -77,22 +77,24 @@ function loadLoginForm () {
         if(flag===1)
         alert("Username cannot contain spaces");
         else
-        if(username.length <=5)
+        if(username.length <5)
         alert("Username must be minimum 5 characters");
         else
-        if(password.length<=5)
+        if(password.length<5)
         alert("Password must be minimum 5 characters");
-    
-            else 
-                {  flag=0;
+       else if(password.length>=5)
+                {  
                     for(var j=0;j<password.length;j++)
                       if(password[j]==' ')
                       {
-                          alert("Password is containing Spaces !!");flag=1;
+                          alert("Password is containing Spaces !!");
                           break;
                       }
-                      if(flag===1)
-                      return ;
+                }
+                else
+                {
+                      
+                     
                     request.open('POST', '/create-user', true);
                     request.setRequestHeader('Content-Type', 'application/json');
                     request.send(JSON.stringify({ username: username, password: password }));
