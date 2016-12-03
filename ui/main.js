@@ -65,6 +65,8 @@ function loadLoginForm () {
               }
           }
         };
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
         var flag;
        //check for minimum requirement
         for( i=0; i<username.length; i++ )
@@ -82,8 +84,7 @@ function loadLoginForm () {
         alert("Password must be minimum 5 characters");
             else 
                 {
-                    console.log(username);
-                    console.log(password);
+                    
                     request.open('POST', '/create-user', true);
                     request.setRequestHeader('Content-Type', 'application/json');
                     request.send(JSON.stringify({ username: username, password: password }));
