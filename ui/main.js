@@ -66,15 +66,31 @@ function loadLoginForm () {
           }
         };
         
-        // Make the request
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        console.log(username);
-        console.log(password);
-        request.open('POST', '/create-user', true);
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({username: username, password: password}));  
-        register.value = 'Registering...';
+       //check for minimum requirement
+        for( i=0; i<username.length; i++ )
+        {   flag =0;
+            if (username[i]==" ")
+            {  flag=1; break; }
+        }
+        if(flag===1)
+        alert("Username cannot contain spaces");
+        else
+        if(username.length <=5)
+        alert("Username must be minimum 5 characters");
+        else
+        if(password.length<=5)
+        alert("Password must be minimum 5 characters");
+            else 
+                {
+                    console.log(username);
+                    console.log(password);
+                    request.open('POST', '/create-user', true);
+                    request.setRequestHeader('Content-Type', 'application/json');
+                    request.send(JSON.stringify({ username: username, password: password }));
+                    register.value = 'Registering...';
+                }
+            
+    
     
     };
 }
