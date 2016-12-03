@@ -65,7 +65,7 @@ function loadLoginForm () {
               }
           }
         };
-        
+        var flag;
        //check for minimum requirement
         for( i=0; i<username.length; i++ )
         {   flag =0;
