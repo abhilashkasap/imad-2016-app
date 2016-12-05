@@ -1,31 +1,6 @@
 
 
-#leftfloat {
-    height: 100%;
-    width: 250px;
-    border-right: thick solid black;
-    padding-top: 20px;
-}
 
-#header {
-    height: 130px;
-    text-align: center;
-    border-bottom: thick solid black;
-}
-
-body {
-    margin-right: -4px;
-}
-
-#articleplace {
-    margin-left: 300px;
-    margin-top: -635px;
-    margin-right: 20px;
-    display: inline-block;
-    position: absolute;
-    height: 100%;
-    width: 550px;
-}
 
 .container {
     background-color: darkgray;
@@ -81,6 +56,7 @@ body {
 {
     color:blue;
     text-decoration:overline;
+    z-index: 10;
 }
 
 #loginwindow {
