@@ -13,8 +13,11 @@ var config = {
     port: '5432',
     password: process.env.DB_PASSWORD
 };
+app.get('/', function(req, res) {
+    res.send(" Server code has not changed but it is producing error");
+});
 
-var app = express();
+/*var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(session({
@@ -231,7 +234,7 @@ app.get('/articles/:articleName', function(req, res) {
 app.get('/ui/:fileName', function(req, res) {
     res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
-
+*/
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function() {
