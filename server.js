@@ -13,11 +13,8 @@ var config = {
     port: '5432',
     password: process.env.DB_PASSWORD
 };
-app.get('/', function(req, res) {
-    res.send(" Server code has not changed but it is producing error");
-});
 
-/*var app = express();
+var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(session({
@@ -25,7 +22,10 @@ app.use(session({
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30 }
 }));
 var pool = new Pool(config);
-
+app.get('/', function(req, res) {
+    res.send(" Server code has not changed but it is producing error");
+});
+/*
 function createTemplate(data) {
     var title = data.title;
     var date = data.date;
@@ -236,7 +236,7 @@ app.get('/ui/:fileName', function(req, res) {
 });
 */
 
-var port = 8082; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8082, function() {
+var port = 8080; // Use 8080 for local development because you might already have apache running on 80
+app.listen(8080, function() {
     console.log(`IMAD course app listening on port ${port}!`);
 });
