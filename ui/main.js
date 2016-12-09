@@ -84,14 +84,18 @@ function loadLoginForm () {
         alert("Password must be minimum 5 characters");
        else 
        if(password.length>=5)
-                {  
+                {  var flag=1;
                     for(var j=0;j<password.length;j++)
                       if(password[j]==' ')
                       {
-                          alert("Password is containing Spaces !!");
+                          flag=0;
                           
                       }
                 
+                if(flag===0)
+                {
+                    alert("Password is containing spaces !!!");
+                }
                 else
                 {
                       
