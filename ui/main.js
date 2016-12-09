@@ -91,7 +91,7 @@ function loadLoginForm () {
                           alert("Password is containing Spaces !!");
                           break;
                       }
-                }
+                
                 else
                 {
                       
@@ -100,6 +100,7 @@ function loadLoginForm () {
                     request.setRequestHeader('Content-Type', 'application/json');
                     request.send(JSON.stringify({ username: username, password: password }));
                     register.value = 'Registering...';
+                }
                 }
             
     
