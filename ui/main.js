@@ -89,7 +89,7 @@ function loadLoginForm () {
                       if(password[j]==' ')
                       {
                           alert("Password is containing Spaces !!");
-                          break;
+                          
                       }
                 
                 else
