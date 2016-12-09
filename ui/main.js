@@ -82,7 +82,8 @@ function loadLoginForm () {
         else
         if(password.length<5)
         alert("Password must be minimum 5 characters");
-       else if(password.length>=5)
+       else 
+       if(password.length>=5)
                 {  
                     for(var j=0;j<password.length;j++)
                       if(password[j]==' ')
